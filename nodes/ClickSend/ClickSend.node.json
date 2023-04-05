@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-clicksend",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://developers.clicksend.com/docs/rest/v3/#introduction"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://developers.clicksend.com/docs/rest/v3/#introduction"
+			}
+		]
+	}
+}

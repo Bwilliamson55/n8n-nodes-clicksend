@@ -1,19 +1,20 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-clicksend",
   "version": "0.1.0",
-  "description": "",
+  "description": "A community node to interact with the ClickSend REST API",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "clicksend"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/bwilliamson55",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Ben Williamson",
+    "email": "bwilliamson@mail.weeumson.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/bwilliamson55/n8n-nodes-clicksend.git"
   },
   "main": "index.js",
   "scripts": {
@@ -30,12 +31,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/ClickSendApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/ClickSend/ClickSend.node.js"
     ]
   },
   "devDependencies": {

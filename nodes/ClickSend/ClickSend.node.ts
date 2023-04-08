@@ -1,6 +1,9 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { accountOperations } from './AccountDescription';
+import { accountOperations, accountFields } from './AccountDescription';
+import { smsFields, smsOperations } from './SmsDescription';
+import { mmsFields, mmsOperations } from './MmsDescription';
+import { uploadFields, uploadOperations } from './UploadDescription';
 
 export class ClickSend implements INodeType {
 	description: INodeTypeDescription = {
@@ -49,10 +52,21 @@ export class ClickSend implements INodeType {
 						name: 'MMS',
 						value: 'mms',
 					},
+					{
+						name: 'Upload',
+						value: 'upload',
+					},
 				],
 				default: 'account',
 			},
 			...accountOperations,
+			...accountFields,
+			...smsOperations,
+			...smsFields,
+			...mmsOperations,
+			...mmsFields,
+			...uploadOperations,
+			...uploadFields,
 		],
 	};
 }

@@ -15,11 +15,11 @@ There is a massive amount of endpoints available for ClickSend through their RES
 
 [Installation](#installation)  
 [Operations](#operations)  
-[Credentials](#credentials)  <!-- delete if no auth needed -->  
+[Credentials](#credentials)
 [Compatibility](#compatibility)  
-[Usage](#usage)  <!-- delete if not using this section -->  
+[Usage](#usage) 
 [Resources](#resources)  
-[Version history](#version-history)  <!-- delete if not using this section -->  
+[Version history](#version-history) 
 
 ## Installation
 
@@ -29,10 +29,17 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 - Account
   - Get details
+  - Get Usage
 - SMS
   - History
+  - Calculate SMS price
+  - Send SMS
 - MMS
   - History
+  - Calculate MMS price
+  - Send MMS
+- Upload
+  - Upload binary media file to be converted for use as a URL
 
 ## Credentials
 
@@ -46,7 +53,9 @@ This is subject to change.
 
 ## Usage
 
-This will be updated soon. Ish. 
+Use the node as you would any other, but some tips 
+  - Estimating cost for SMS/MMS uses the exact same fields as for sending them. So you should be able to flip back and forth between the different modes easily.
+  - You must use the 'upload' operation before sending an MMS UNLESS your media is already a compatible format ([See Docs about that here](https://developers.clicksend.com/docs/rest/v3/?shell#ClickSend-v3-API-Upload))
 
 ## Resources
 
@@ -56,4 +65,17 @@ This will be updated soon. Ish.
 ## Version history
 
 - 0.1.0 - Initial release
-  - 
+  - Features:
+    - Account
+      - Get details
+      - Get Usage
+    - SMS
+      - History
+      - Calculate SMS price
+      - Send SMS
+    - MMS
+      - History
+      - Calculate MMS price
+      - Send MMS
+    - Upload
+      - Upload binary media file to be converted for use as a URL
